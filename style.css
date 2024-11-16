@@ -1,0 +1,74 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.hero {
+	background-image: url(background.png); /* Replace with a beach image URL */
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+	font-size: 4rem;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.footer {
+	background-color: #343a40;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Style for carousel */
+.carousel-inner img {
+	height: 1000px; /* Height for carousel images */
+	object-fit: scale-down; /* Ensures images cover the area without distorting */
+}
+
+/* Custom Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+	color: white;
+	padding: 10px;
+	border-radius: 50%;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel-control-prev {
+	left: -50px; /* Position the left arrow outside */
+}
+
+.carousel-control-next {
+	right: -50px; /* Position the right arrow outside */
+}
+
+.arrow-prev, .arrow-next {
+	font-size: 1.5rem; /* Adjust arrow size */
+	color: white; /* Set arrow color */
+}
